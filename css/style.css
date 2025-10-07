@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-bg-color: black;
+}
+
+/* it changes the color of the whole website at once  */
+/* it is also useful for dark/light mode websites */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    padding: 0 20px;
+}
+
+nav ul {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    /* to remove the underline */
+    font-size: 14px;
+}
+
+/* to add style for hover the buttons of navbar */
+nav ul li a:hover {
+    color: #1f79c4;
+    /* font-weight: bolder; */
+}
+
+.help {
+    margin-left: auto;
+    /* this is how i put the li a's to the top right */
+}
+
+.search {
+    /* Remove position: relative here, it's now on the form */
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+}
+
+.search form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search input {
+    width: 400px;
+    height: 23px;
+    border-radius: 4px;
+    margin: 0 0 0 0;
+    padding-left: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    /* position: absolute; */
+    /* left: 388px; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+    /* allows clicking input */
+}
+
+.slider {
+    margin: 12px auto;
+    width: 90vw;
+    display: flex;
+    /* justify-content: center; */
+    overflow: hidden;
+}
+
+.img1 {
+    width: 100vw;
+    height: 500px;
+}
+
+.slider-img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.slider-text {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2.0rem;
+    font-family: "Montserrat", sans-serif;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    pointer-events: none;
+    /* allows clicking through the text */
+}
+
+.container {
+    min-height: calc(100vh - 60px - 10vh);
+    /*by this it covers the whole(header main footer)in 100vh of the page (where 60px and 10vh are the values of header and footer) respectively!*/
+}
+
+.card {
+    margin: auto;
+    max-width: 92vw;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.cards :hover{
+    color: #1f79c4;
+    font-weight: bold;
+    visibility: visible;
+}
+
+.card h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-item {
+    width: 11vw;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.card-item img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+
+footer {
+    background-color: var(--main-bg-color);
+    height: 10vh;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}

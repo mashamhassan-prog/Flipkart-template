@@ -1,0 +1,28 @@
+/* utils is for utility classes used in CSS */
+body{
+    background-color: whitesmoke;
+}
+
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-2{
+    margin: 10px 0;
+    background-color: white;
+}
+
+.text-center{
+    text-align: center;
+    font-size: 12px;
+}
+
+.my-1{
+    margin: 5px 0;
+}
+
+.my-3{
+    background-color: white;
+}
